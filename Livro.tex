@@ -1,0 +1,295 @@
+%% LyX 2.4.1 created this file.  For more info, see https://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,brazil]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{luainputenc}
+\usepackage{geometry}
+\geometry{verbose,tmargin=1cm,bmargin=1cm,lmargin=1cm,rmargin=1cm}
+
+\makeatletter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newcommand{\lyxrightaddress}[1]{
+	\par {\raggedleft \begin{tabular}{l}\ignorespaces
+	#1
+	\end{tabular}
+	\vspace{1.4em}
+	\par}
+}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+\title{Manual de Econofísica}
+\author{Jhordan Silveira de Borba}
+\maketitle
+
+\lyxrightaddress{sbjhordan@gmail.com}
+
+\tableofcontents{}\pagebreak{}
+
+\section*{Prefácio}
+
+\subsection*{Sobre o projeto}
+
+Este é um projeto pessoal bastante diferente, eu começo sem saber
+exatamente onde vou terminar, se vou terminar. Não tenho planejado
+nem mesmo de forma exata qual será a sequência dos capítulos que abordarei,
+descobrirei durante a jornada, mesmo assim eu quero compartilhar esta
+jornada. Ao mesmo tempo, é arriscado pois eventuais erros que cometerei
+(e sei que cometerei) durante o estudo estarão disponíveis publicamente,
+mas vou aceitar o desafio. O que posso adiantar é que eu não me proponho
+a ser um economista convencional, eu já cometi o erro de tentar ir
+por esse caminho e não repetirei o mesmo erro. Ou seja, trarei uma
+abordagem estritamente não convencional e sei de toda polêmica que
+isso acarreta. Além disso, por um viés pessoal (que pode ser corretamente
+chamado de \textquotedblleft preguiça\textquotedblright , e não por
+desmerecer) eu vou tender a não me prolongar na parte conceitual,
+colocando uma maior ênfase na parte matemática, ou mais estritamente,
+na parte quantitativa. 
+
+Além disso, eu passei muito tempo tentando entender o que é econofísica
+e como ela dialoga com economia e com a física (ou ciência mais tradicional),
+no momento eu não acho que vale a pena eu dedicar meu tempo a escrever
+sobre isto. Mas posso recomendar algumas leituras para quem quiser
+explorar essa parte mais histórica do campo: 
+\begin{itemize}
+\item Statistical Laws in Complex Systems\cite{Altmann_2024}: é uma leitura
+muito interessante que explora a relação entre as leis estáticas e
+os sistemas complexos de forma geral, e uma leitura fundamental para
+entender o método que os cientistas têm adotado para investigar este
+tipo de sistema nos mais variados contextos, e um texto que me influenciou
+profundamente.
+\item An Introduction to Agent-Based Modeling: Modeling Natural, Social,
+and Engineered Complex Systems with NetLogo\cite{wilensky2015introduction}: 
+\item Agent-Based Models, Macroeconomic Scaling Laws and Sentiment Dynamics\cite{diss_mods_00007721}:
+\item A física das partículas humanas\cite{Celia}: é um texto de divulgação
+científica sobre a física social que se comunica de forma bastante
+eficiente com um público mais geral.
+\item Social Physics\cite{JUSUP20221}: é um relatório de 2022 sobre a área
+de física social. Este relatório inclui dentre outras discussões,
+uma curta discussão sobre o desenvolvimento histórico e a definição
+do que é física social em seu começo, assim como uma discussão mais
+específica sobre o que é econofísica no seu respectivo capítulo.
+\end{itemize}
+
+\subsection*{Sobre os objetivos do projeto}
+
+Eu tenho algumas considerações a fazer, mas que provavelmente não
+farei totalmente hoje. Mas é novamente quanto a minha pesquisa. Como
+eu comentei com uma amiga, existe uma grande questão sobre o que fazer.
+Vou até pegar a conversa: o maior problema que enfrento no momento
+é a dificuldade de planejar o que fazer daqui a 3 anos, pois se eu
+vou fazer outro doutorado em quântica eu tenho que fazer uma coisa.
+Se eu vou seguir em econofisica é outra coisa, e ainda se eu vou sair
+de tudo e focar em fazer a segunda graduação em letras, é ainda outra
+coisa. E ainda há uma outra questão, uma confusão a ser resolvida
+que resulta do fato de que meu orientador me exige pouco. Acredito
+que eu precisaria de menos de 10h/semana normalmente para fazer o
+que ele pede, mas é exatamente nesse cenário que surge o problema
+sobre o futuro. Se eu decidisse sair dessa área, provavelmente estudar
+só estas 10h/semana seria completamente suficiente. Porém se eu vou
+tentar seguir na área (de qualquer forma que seja, se eu aspire algo
+mais que a mera aprovação, seja conseguir um intercâmbio, um pós doutorado,
+etc) preciso seguir estudando mais coisas para me especializar. Mas
+aí fica a questão: estudar exatamente o que?
+
+Eu acredito que como mencionei outras vezes, vou estudar o classical
+econophysics. A diferença é que agora eu acho que vou comprar briga
+com todos. Os liberais, não é novidade, tudo que eu já discuti até
+agora permanece válido e somos eternamente inimigos. Mas há uma certa
+discussão com marxistas. E vou separar os marxistas em dois grupos:
+primeiro tem os economistas marxistas. Que talvez por se inserirem
+também dentro da área da economia clássica, vamos nos colidir a partir
+do momento que passo a ver que a econofísica tenta se consolidar de
+forma independente da economia. Quase que ignorando a economia, e
+diferente do que eu propunha anteriormente, não sendo uma ferramenta
+para essa, mas uma superação dessa (o que inclui pelo próprio termo,
+que nem tudo da economia clássica deve ser descartada, mas que nesse
+processo de manter o que serve e descartar o que não, a econofísica
+se propõe a ser uma explicação substitutiva e melhor da realidade
+econômica do que a própria economia tem feito). Assim sendo, me parece
+que uma colisão com esse grupo de economistas, é inevitável, assim
+como qualquer outro economista convencional. E ainda há uma colisão
+com outro grupo de marxistas que vão defender que não é possível propor
+uma economia marxista (ou socialista) uma vez que estamos propondo
+explicitamente uma economia.
+
+Esses eu acho que me demanda mais estudo para responder de forma mais
+apropriada. Mas primeiro eu diria que se a econofísica explicar a
+vida econômica da sociedade, é o que interessa. Mesmo que precisemos
+corrigir Marx para isso. Em segundo, eu acho que precisa ser entendido
+que há duas propostas de economia que podem ser feitas. Uma é de investigação
+e 'controle' do capitalismo. Coloco entre aspas porque diferente do
+que é normalmente acusado, não há a ilusão de que o capitalismo pode
+ser controlado no sentido de que esse controle vá evitar que surjam
+crises ou que os problemas do capitalismo possam ser resolvidos completamente
+através de reformas. Mas é evidente que uma hipótese razoável é a
+de que uma melhor compreensão do capitalismo pode servir de 'alívio'
+enquanto o capitalismo existir (assim como um sindicato forte pode
+aliviar a vida do trabalhador), e não apenas isso, mas pode facilitar
+o caminho para superação do capitalismo. Em resumo, porque uma vez
+que o trabalhador entende melhor o capitalismo, ele pode traçar melhor
+sua estratégia para superação do mesmo. Tanto porque compreendendo
+melhor o capitalismo os trabalhadores podem traçar melhor sua estratégia
+para a tomada do poder, quanto que uma vez tomado o poder, se a situação
+não permitir a superação imediata do capitalismo, de posse de uma
+melhor compreensão do mesmo, é possível construir então as condições
+necessárias para a superação do mesmo. Sobre isso eu ainda queria
+discutir mais duas coisas. A primeira é que um exemplo óbvio é o que
+comentei outro dia: os estudos de econofísica apontam sobre a necessidade
+de um pesado imposto sobre a riqueza (apoiado nas ideias que desigualdade
+é ruim pra própria economia - alguns ainda apontam que alguma desigualdade
+é necessário para que as pessoas tenham capital para investir, mas
+transferimos a responsabilidade pro estado como representante dos
+interesses da sociedade -, desigualdade é intrínseca do capitalismo
+e super ricos não tem mérito para serem o que são, é fruto do acaso.
+Logo se a existência de super ricos é danosa pro coletivo e não há
+mérito, não há motivos para mantê-los existindo), uma medida que parece
+atacar o coração do próprio capitalismo e abre caminho para a superação
+da mesma. Ainda que ela em si não seja uma proposta de superação,
+propõe uma expropriação do capitalista tomando seu capital por meio
+de impostos. Ao mesmo tempo que uma vez que o capitalista não acumula
+mais capital e esta tarefa cabe agora ao estado, cabe a gente repensar
+em toda relação de produção, se ainda é necessário a relação mediada
+pelo salário ou há uma relação melhor para as novas forças produtivas.
+Também me parece importante que por ser inevitável a implementação
+dessa proposta sem a tomada do estado pelos trabalhadores, sugere
+essa necessidade para que a desigualdade possa ser combatida. É evidente
+que se a tomada do estado é o caminho, e como ela deve ser feita (e
+até certo ponto, até mesmo o que é o estado), é outra discussão.
+
+E agora, um segundo argumento contra os marxistas que se opõe a uma
+postura mais propositiva, eu quero discutir sobre a sociedade pós-capitalista.
+Me parece que a partir do momento que propomos a superação do capitalismo,
+é interessante que tenhamos alguma ideia do que esperamos do que seria
+essa sociedade pós-capitalista. É necessário (e talvez até seja a
+parte mais importante) propor uma alternativa. Eu sei que isso é uma
+discussão polêmica, alguns diriam que 'Marx nunca propôs nada', mas
+nas suas críticas ao programa de Gotha ele faz algumas proposições,
+como por exemplo, o uso de vale-trabalho no que (se não estou errado)
+seria a fase inferior do comunismo. Então apesar de não ter sido o
+foco de Marx ele propôs alguma coisa. E eu acho que precisamos propor
+algo. E além do mais, como eu disse, me sinto livre para discordar
+de Marx, então não é de fato nenhum crime fazer algo que Marx não
+fez. Assim como propomos uma modelagem muito mais matemática e computacional
+(e menos filosófica) do que o próprio Marx. Em parte podemos pensar
+que isso acontece porque Marx simplesmente não tinha os recursos que
+temos, e em parte, advogo independência de pensamento. Mas de toda
+forma, esta seria a segunda parte dos estudos que quero fazer de econofísica.
+Em resumo, parte dos estudos são sobre entender o atual modo de produção
+capitalista para que possamos traçar a melhor estratégia para superá-lo,
+e isso é o que estou fazendo mais oficialmente no doutorado e nos
+artigos publicados explorando a arquitetura social do capitalismo
+e como o padrão de desigualdade emerge dessa estrutura. E em parte
+é um estudo mais propositivo de uma nova economia, que eu quero fazer
+no restante do tempo l\textquotedblright ivre\textquotedblright ,
+esta é a parte que preenche a lacuna sobre o que eu falava que eu
+não sabia 'sobre o que estudar'. Bem, o que me consola é que Marx
+chamou a economia de seu tempo de uma pseudo-ciência, impregnada pela
+ideologia burguesa, os economistas e filósofos se tornaram representantes
+intelectuais da burguesia, então ao propor superar a economia com
+econofísica, eu me sinto na economia do próprio Marx.
+
+Principalmente porque eu não busco superar Marx, mas a partir de suas
+obras, principalmente O Capital. Neste sentido, o que pode acontecer
+é de que eu, e a tradição da econofísica não seguiremos fielmente
+a tradição estabelecida chamada de economia marxista. Talvez por considerar
+que ela de certa forma representou um regresso à economia tão criticada
+por Marx, propomos um rompimento mais radical ainda com a economia.
+Da mesma forma que sempre defendi um rompimento mais radical com a
+filosofia. Se considero que o materialismo dialético é a teoria marxista
+que superou a filosofia, espero que a econofísica seja a teoria econômica
+que supere a economia convencional, um trabalho iniciado pelo próprio
+Marx. Então apesar de não negar toda economia clássica (incluindo
+marxistas) eu sinto que a econofísica que eu proponho parte de O Capital
+de Marx principalmente e das obras de Engels. Se eu fosse elencar
+qual a origem da ciência econofísica que eu proponho, colocaria em
+O Capital, Anti-Duhring e A Ideologia Alemã. Partindo daí, superamos
+toda literatura econômica, absorvendo o que presta, e descartando
+o que não, incorporando nas ferramentas e teorias desenvolvidas dentro
+da própria área. Investigamos o capitalismo e bom, quando possível
+propomos uma economia socialista e/ou comunista. E quando digo em
+'economia socialista', tem dois sentidos de entender: propomos tanto
+um modo de produção socialista (vou usar socialista e comunista como
+intercambiáveis agora) quanto uma ciência (chamada economia) que seja
+capaz de investigar esse modo de produção e produzir conhecimentos
+sobre o mesmo. Ou seja, com o arcabouço teórico da econofísica buscamos
+investigar tanto o modo de produção capitalista quanto o socialista,
+mas evidentemente que enquanto o primeiro existe e precisamos apenas
+retirar os conceitos da realidade material, o segundo trata de um
+projeto. Mas que para apresentar um projeto mais robusto possível,
+tenta-se avaliar criticamente esse projeto à luz de uma teoria apropriada.
+Evidentemente, reconhecendo os limites. O que acho importante destacar
+é que esse projeto se diferencia do socialismo utópico pois não é
+um projeto que existe sem a demanda popular e a necessidade de força
+política, não é tão pouco um projeto isolado, de uma comuna pequena,
+ou uma fábrica onde o dono pode implementar sozinho, nem tão pouco
+um projeto que vise apenas salários mais justos. É um projeto de um
+novo arranjo econômico, um novo modo de produção com um novas relações
+de produção, que precisa ser implementada em toda uma sociedade e
+que para ser implementada, uma vez que diz respeito de toda sociedade,
+demanda que esta sociedade a implemente. É necessário que a classe
+dos proletários tenham poder político e implementem esse projeto político
+de uma nova sociedade. Ou seja, é um projeto que não apenas reconhece
+a luta de classes, mas depende dela. E além disso, é um projeto que
+apesar de discutir sobre o futuro, discute um futuro próximo e parte
+da realidade material do presente, ele reconhece seu lugar na história.
+
+Agora resta um último tópico a ser coberto: Sou marxista? Isto é um
+projeto marxista? Estou querendo fazer uma econofísica marxista? Eu
+acho que isso depende do significado que atribuirmos ao termo. Se
+for exigido uma submissão fiel e religiosa a Marx, eu não sou marxista.
+Me sinto livre o bastante para discordar de Marx quando necessário.
+Como uma ciência, Marx e Engels têm o mérito de darem o pontapé inicial,
+após isso a ciência se desenvolve sozinha. A relatividade de hoje
+não é igual à que Einstein propôs, nem a teoria da evolução moderna
+igual à que Darwin propôs. Então nesse aspecto me sinto livre. Da
+mesma forma que talvez se for exigir uma submissão da minha pesquisa
+ao que muitas vezes é chamado de economia marxista, é possível que
+eu também não seja marxista. Conforme eu expus nas linhas anteriores,
+eu estou propondo uma superação da economia, uma abordagem nova. Uma
+abordagem da vida econômica da sociedade que seja verdadeiramente
+científica, coisa que em grande parte a economia não é. Evidentemente,
+se destaca aqui a negação da ciência da economia marginalista, mas
+aquilo que ficou tradicionalmente conhecido como economia marxista
+possui também suas limitações que nos propomos a superar, e acreditamos
+que a superação está fora da economia, mas na econofísica. Agora,
+eu entendo marxista em um sentido mais histórico, como rotulando um
+movimento de luta pela emancipação dos trabalhadores que existe de
+forma contínua desde Marx e Engels. Assim como Lênin se define como
+herdeiro de Marx e Engels, e depois Stalin se considera continuador
+do leninismo, e Mao avança essa tradição reconhecendo seus precursores,
+nessa história contínua de luta anticapitalista eu me considero totalmente
+marxista. E mais, marxista-leninista. Eu não nego nenhuma das experiências
+marxistas, e estou alinhado ao grosso da produção de materialismo
+dialético de todas essas experiências socialistas, então eu não vejo
+como não me considerar marxista. Se existem divergências, acredito
+serem pontuais. Até porque não estou negando a economia marxista existente
+em Marx e Engels, a maioria dos principais nomes do pensamento marxista
+não eram de fato economistas, escrevem mais sobre política e até mesmo
+filosofia. O que escreveram sobre economia (e não é que não escreveram
+nada) acredito que ocupa um espaço de menor importância e não é crítico
+que eu discorde destes pontos. Pois temos em geral a mesma concepção
+global de mundo pautado no materialismo dialético, temos o mesmo método
+de investigação pautado na dialética materialista, e temos os mesmos
+objetivos de superação do capitalismo e emancipação do trabalhador.
+Divergências pontuais de exatamente como aplicar isso na análise da
+vida econômica da sociedade, eu considero ser uma divergência menor
+do que tudo aquilo que nos une. Então eu me considero marxista, mas
+se isso ofenderem os mais sensíveis, eu não me importo de ser considerado
+socialista. Este é um título que me agrada bastante, até por ser mais
+impessoal.
+
+\part{Leis estatísticas}
+
+\part{Modelos generativos}
+
+\section{Arquitetura Social do Capitalismo}
+
+\pagebreak{}
+
+\bibliographystyle{plain}
+\bibliography{ref}
+
+\end{document}
